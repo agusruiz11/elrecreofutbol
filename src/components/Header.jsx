@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/brand/logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,16 +46,16 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <motion.div
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.5 }}
             className="flex items-center space-x-2 cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-[#DBAA0C] to-[#5AA8D8] rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">⚽</span>
+            <div className="w-24 h-24 flex items-center justify-center overflow-hidden">
+              <img src={logo} alt="El Recreo Fútbol Logo" className="w-full h-full object-cover" />
             </div>
-            <span className={`text-xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
+            {/* <span className={`text-xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
               El Recreo Fútbol
-            </span>
+            </span> */}
           </motion.div>
 
           <div className="hidden md:flex items-center space-x-6">
@@ -62,8 +63,8 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`font-medium transition-colors hover:text-[#DBAA0C] ${
-                  isScrolled ? 'text-gray-700' : 'text-white'
+                className={`font-bold text-xl transition-colors drop-shadow-[3px_6px_6px_rgba(0,0,0,1)] hover:drop-shadow-none hover:text-[#F9BD1A] ${
+                  isScrolled ? 'text-gray-700 drop-shadow-none hover:bg-transparent hover:text-white' : 'text-white'
                 }`}
               >
                 {item.label}
@@ -71,9 +72,9 @@ const Header = () => {
             ))}
             <Button
               onClick={() => scrollToSection('contact')}
-              className="bg-gradient-to-r from-[#DBAA0C] to-[#5AA8D8] hover:from-[#5AA8D8]/90 hover:to-[#DBAA0C]/90 hover:text-gray-900"
+              className="font-bold text-lg bg-[#F9BD1A] text-black hover:bg-[#96E0EF]"
             >
-              Inscribite Ahora
+              Inscribite
             </Button>
           </div>
 
