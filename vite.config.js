@@ -8,7 +8,7 @@ import selectionModePlugin from './plugins/selection-mode/vite-plugin-selection-
 
 const isDev = process.env.NODE_ENV !== 'production';
 
-const configHorizonsViteErrorHandler = `
+const configElRecreoViteErrorHandler = `
 const observer = new MutationObserver((mutations) => {
 	for (const mutation of mutations) {
 		for (const addedNode of mutation.addedNodes) {
@@ -48,14 +48,14 @@ function handleViteOverlay(node) {
 		const error = messageText + (fileText ? ' File:' + fileText : '');
 
 		window.parent.postMessage({
-			type: 'horizons-vite-error',
+			type: 'el-recreo-vite-error',
 			error,
 		}, '*');
 	}
 }
 `;
 
-const configHorizonsRuntimeErrorHandler = `
+const configElRecreoRuntimeErrorHandler = `
 window.onerror = (message, source, lineno, colno, errorObj) => {
 	const errorDetails = errorObj ? JSON.stringify({
 		name: errorObj.name,
@@ -67,14 +67,14 @@ window.onerror = (message, source, lineno, colno, errorObj) => {
 	}) : null;
 
 	window.parent.postMessage({
-		type: 'horizons-runtime-error',
+		type: 'el-recreo-runtime-error',
 		message,
 		error: errorDetails
 	}, '*');
 };
 `;
 
-const configHorizonsConsoleErrroHandler = `
+const configElRecreoConsoleErrroHandler = `
 const originalConsoleError = console.error;
 console.error = function(...args) {
 	originalConsoleError.apply(console, args);
@@ -94,7 +94,7 @@ console.error = function(...args) {
 	}
 
 	window.parent.postMessage({
-		type: 'horizons-console-error',
+		type: 'el-recreo-console-error',
 		error: errorString
 	}, '*');
 };
@@ -157,7 +157,7 @@ if (window.navigation && window.self !== window.top) {
 		}
 
 		window.parent.postMessage({
-			type: 'horizons-navigation-error',
+			type: 'el-recreo-navigation-error',
 			url,
 		}, '*');
 	});
@@ -171,19 +171,19 @@ const addTransformIndexHtml = {
 			{
 				tag: 'script',
 				attrs: { type: 'module' },
-				children: configHorizonsRuntimeErrorHandler,
+				children: configElRecreoRuntimeErrorHandler,
 				injectTo: 'head',
 			},
 			{
 				tag: 'script',
 				attrs: { type: 'module' },
-				children: configHorizonsViteErrorHandler,
+				children: configElRecreoViteErrorHandler,
 				injectTo: 'head',
 			},
 			{
 				tag: 'script',
 				attrs: {type: 'module'},
-				children: configHorizonsConsoleErrroHandler,
+				children: configElRecreoConsoleErrroHandler,
 				injectTo: 'head',
 			},
 			{
