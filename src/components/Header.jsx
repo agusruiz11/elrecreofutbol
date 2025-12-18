@@ -26,12 +26,13 @@ const Header = () => {
   };
 
   const navItems = [
-    { label: 'Inicio', id: 'hero' },
     { label: 'Nosotros', id: 'about' },
-    { label: 'Categorías', id: 'categories' },
-    { label: 'Equipo', id: 'team' },
-    { label: 'Servicios', id: 'services' },
-    { label: 'Contacto', id: 'contact' },
+    { label: 'Ubicación', id: 'location' },
+    { label: 'Categorías y Horarios', id: 'categories' },
+    { label: 'Precios', id: 'services' },
+    { label: 'Fotos', id: 'gallery' },
+    { label: 'Gira 2026', id: 'gira' },
+    { label: 'FAQ', id: 'faq' },
   ];
 
   return (
@@ -74,7 +75,7 @@ const Header = () => {
               onClick={() => scrollToSection('contact')}
               className="font-bold text-lg bg-[#F9BD1A] text-black hover:bg-[#96E0EF]"
             >
-              Inscribite
+              Contacto
             </Button>
           </div>
 

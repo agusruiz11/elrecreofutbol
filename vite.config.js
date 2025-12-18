@@ -247,6 +247,7 @@ export default defineConfig({
 		},
 		allowedHosts: true,
 	},
+	assetsInclude: ['**/*.JPG'],
 	resolve: {
 		extensions: ['.jsx', '.js', '.tsx', '.ts', '.json', ],
 		alias: {

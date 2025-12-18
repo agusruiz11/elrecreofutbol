@@ -39,7 +39,10 @@ const ScrollToTop = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={scrollToTop}
-          className="fixed bottom-7 right-24 z-50 p-4 bg-gradient-to-r from-[#DBAA0C] to-[#5AA8D8] text-white rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300"
+          style={{
+            background: 'radial-gradient(circle at 50% 50%,rgb(199, 234, 240),rgb(138, 220, 236) ,rgb(112, 217, 238))'
+          }}
+          className="fixed bottom-7 right-24 z-50 p-4 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300"
           aria-label="Volver arriba"
         >
           <ArrowUp size={24} />

@@ -11,37 +11,49 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: '¿A partir de qué edad pueden inscribirse?',
-      answer: 'Aceptamos niños desde los 4 años en nuestra categoría Pre-Infantil. Tenemos programas específicos para cada rango de edad hasta los 16 años, adaptados al nivel de desarrollo de cada grupo.'
+      question: "¿Qué sucede si llueve?",
+      answer: "La actividad no se suspende, todas las canchas son techadas y de césped sintético."
     },
     {
-      question: '¿Qué documentación necesito para la inscripción?',
-      answer: 'Para inscribir a tu hijo necesitás: DNI del niño y del padre/madre/tutor, certificado médico de aptitud física, 2 fotos carnet, y completar la ficha de inscripción que te brindamos. El seguro deportivo se gestiona con nosotros.'
+      question: "¿Se tiene que abonar la totalidad de la matrícula si ingresé en los últimos meses?",
+      answer: "Sí, siempre se abona la matrícula completa para habilitar el cupo, sin excepción."
     },
     {
-      question: '¿Hay clases de prueba gratuitas?',
-      answer: 'Sí, ofrecemos una clase de prueba gratuita para que tu hijo conozca nuestras instalaciones, metodología de trabajo y el grupo. Podés agendar tu clase de prueba contactándonos por WhatsApp o email.'
+      question: "¿Cómo hago para darme de baja de la actividad?",
+      answer: "Podés darte de baja en cualquier momento avisando al coordinador general. Una vez generada la baja se libera tu cupo, por lo que no podemos asegurar lugar si querés volver. En caso de regresar, deberás abonar nuevamente la matrícula (según disponibilidad de cupos)."
     },
     {
-      question: '¿Qué pasa si mi hijo no puede asistir a un entrenamiento?',
-      answer: 'Entendemos que pueden surgir imprevistos. Si avisás con anticipación, coordinamos una clase de recuperación en otro horario de la misma semana, según disponibilidad de cupos.'
+      question: "¿Hasta cuándo son las clases?",
+      answer: "Las clases se dictan desde marzo hasta mediados de diciembre de 2025. Ese mes, a diferencia de otros años, se abona solo la mitad de la cuota. No frenamos durante las vacaciones de invierno."
     },
     {
-      question: '¿Incluye el equipamiento deportivo?',
-      answer: 'Depende del plan elegido. El Plan Básico incluye equipamiento básico para entrenar, el Plan Completo incluye un kit deportivo completo (camiseta, short, medias), y el Plan Elite incluye un kit premium con ropa de entrenamiento y partido.'
+      question: "¿Es necesario tener la camiseta de El Recreo Fútbol?",
+      answer: "No es obligatoria para entrenar durante la semana, pero sí es requerida para jugar en la Liga de los Sábados. Los adultos también pueden pedir su camiseta, hay talles para todos/as."
     },
     {
-      question: '¿Hay descuentos por hermanos?',
-      answer: 'Sí, ofrecemos un 15% de descuento en la segunda inscripción y 20% desde la tercera en adelante. También tenemos promociones especiales durante el año que podés consultar contactándonos.'
+      question: "Si mi niño/a no pudo asistir durante un período largo del mes, ¿es necesario abonar el mes entero?",
+      answer: "Sí. A menos que se haya realizado la baja con anticipación, es necesario abonar el mes completo para no perder el cupo."
     },
     {
-      question: '¿Participan en torneos y competencias?',
-      answer: 'Sí, organizamos torneos internos mensuales y participamos en competencias regionales y nacionales. Los jugadores de Plan Completo y Elite tienen participación garantizada en estos eventos.'
+      question: "¿Qué sucede si hay un mes en el que no podemos asistir, hay que abonar igual?",
+      answer: "Para mantener el cupo es necesario abonar el mes aunque no puedan asistir. Si un mes no se abona, se pierde el cupo y la matrícula habilitante, debiendo pagar nuevamente la matrícula en caso de querer retomar."
     },
     {
-      question: '¿Cuál es la metodología de entrenamiento?',
-      answer: 'Utilizamos una metodología moderna basada en el desarrollo integral del jugador, combinando trabajo técnico individual, táctico grupal, preparación física y valores deportivos. Cada categoría tiene objetivos específicos adaptados a su edad.'
+      question: "¿Cómo funciona el día de prueba?",
+      answer: "El día de prueba está pensado para chicos y chicas que nunca participaron de El Recreo Fútbol. Deben completar un formulario con sus datos y reglas de convivencia. El día de prueba no genera un cupo oficial, pero en caso de lista de espera otorga prioridad cuando se libera un lugar."
     },
+    {
+      question: "¿Cómo se abona la matrícula anual?",
+      answer: "La matrícula anual se abona por transferencia bancaria. De esta manera evitamos comisiones adicionales y podemos mantener un contacto directo con cada familia para coordinar cupos y horarios."
+    },
+    {
+      question: "¿Qué incluye el costo por competencia?",
+      answer: "El extra por competencia cubre la participación en la Liga Formativa: matrícula del torneo, pagos a docentes, organización de partidos, árbitros y seguros. Los partidos se juegan sábado de por medio, con un mínimo de 6 y un máximo de 7 fechas; si llueve, se reprograman."
+    },
+    {
+      question: "¿Qué pasa en caso de una emergencia durante la actividad?",
+      answer: "Ante una emergencia se llama a la ambulancia del establecimiento o del torneo. Si la familia prefiere retirar al niño o niña por sus propios medios, deberá firmar el libro de actas correspondiente."
+    }
   ];
 
   const toggleFAQ = (index) => {

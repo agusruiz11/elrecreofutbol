@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { Target, Award, Heart, Zap } from 'lucide-react';
+import bgAbout from '@/assets/hero/bg2.jpg';
 
 const About = () => {
   const ref = React.useRef(null);
@@ -41,10 +42,10 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Sobre Nosotros
+            Sobre El Recreo
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Somos una academia deportiva dedicada a la formación integral de niños y jóvenes a través del fútbol
+            Somos una academia deportiva dedicada a la formación integral de niños y jóvenes, varones y mujeres, de todas las edades, a través del fútbol
           </p>
         </motion.div>
 
@@ -55,9 +56,10 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <img 
-              alt="Entrenador enseñando técnicas de fútbol a niños"
-              className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
-             src="https://images.unsplash.com/photo-1604651685068-8223d8790770" />
+              src={bgAbout}
+              alt="Background About"
+              className="rounded-2xl shadow-2xl w-full h-[400px] object-cover hover:scale-125 transition-all duration-300"
+            />
           </motion.div>
 
           <motion.div
@@ -66,24 +68,24 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <h3 className="text-3xl font-bold text-gray-900 mb-6">
-              Nuestra Misión
+              Nuestra Historia
             </h3>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Formamos jugadores integrales combinando técnica, táctica y valores. Nuestro objetivo es desarrollar el potencial de cada niño en un ambiente seguro, profesional y divertido.
+            El Recreo Fútbol arrancó en el año 2022, con no más de 50 alumnos/as que buscaban divertirse, aprender un deporte nuevo y practicarlo. Actualmente ya somos más de 160 alumnos/as curriculares y más de 250 familias que pasaron por nuestras clases , somos la escuela de fútbol más grande de Parque Chacabuco.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Con más de 10 años de experiencia, hemos preparado cientos de jugadores que han continuado su carrera en clubes profesionales y selecciones juveniles.
+            ¿Por qué se suma tanta gente? Debido a que tenemos una estructura ya formada, con nuestras reglas de convivencia, con una administración bien marcada y por sobre todo con un excelente ambiente humano entre los responsables, los niños y los docentes. 
             </p>
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center gap-2">
                 <div className="w-12 h-12 bg-[#DBAA0C]/20 rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-[#DBAA0C]">10+</span>
+                  <span className="text-2xl font-bold text-[#DBAA0C]">3+</span>
                 </div>
                 <span className="text-gray-700 font-medium">Años de experiencia</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-12 h-12 bg-[#5AA8D8]/20 rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-[#5AA8D8]">500+</span>
+                <div className="w-16 h-12 bg-[#96E0EF]/30 rounded-full flex items-center justify-center">
+                  <span className="text-2xl font-bold text-[#5AA8D8]">150+</span>
                 </div>
                 <span className="text-gray-700 font-medium">Alumnos formados</span>
               </div>
@@ -108,7 +110,7 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-[#DBAA0C] to-[#5AA8D8] rounded-full flex items-center justify-center mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#96E0EF] to-[#5AA8D8] rounded-full flex items-center justify-center mb-4">
                   <value.icon className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-2">{value.title}</h4>

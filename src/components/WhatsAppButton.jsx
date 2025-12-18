@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PHONE_NUMBER = '5491123456789'; // Reemplaza por tu número en formato internacional sin "+"
+const PHONE_NUMBER = '5491122650481'; // Reemplaza por tu número en formato internacional sin "+"
 const DEFAULT_MESSAGE = 'Hola, quiero más información sobre la escuela de fútbol.'; // Mensaje inicial
 
 function WhatsAppButton() {

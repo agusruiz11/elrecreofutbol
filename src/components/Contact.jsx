@@ -1,85 +1,42 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, Facebook, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useToast } from '@/components/ui/use-toast';
+import contactImage from '@/assets/photos/kids/DSC_0210.jpg';
 
 const Contact = () => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const { toast } = useToast();
-  
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    if (!formData.name || !formData.email || !formData.message) {
-      toast({
-        title: "Error",
-        description: "Por favor, completá todos los campos obligatorios",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    // Store in localStorage for demo purposes
-    const contacts = JSON.parse(localStorage.getItem('contacts') || '[]');
-    contacts.push({
-      ...formData,
-      date: new Date().toISOString(),
-    });
-    localStorage.setItem('contacts', JSON.stringify(contacts));
-
-    toast({
-      title: "¡Mensaje enviado!",
-      description: "Te contactaremos a la brevedad. ¡Gracias por tu interés!",
-    });
-
-    setFormData({ name: '', email: '', phone: '', message: '' });
-  };
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/5491112345678', '_blank');
+    window.open('https://wa.me/5491122650481', '_blank');
   };
 
   const contactInfo = [
     {
       icon: Phone,
       title: 'Teléfono',
-      content: '+54 9 11 1234-5678',
-      action: () => window.open('tel:+5491112345678')
+      content: '+54 9 11 2265-0481',
+      action: () => window.open('tel:+5491122650481')
     },
     {
       icon: Mail,
       title: 'Email',
-      content: 'info@academiafutbol.com.ar',
-      action: () => window.open('mailto:info@academiafutbol.com.ar')
+      content: 'info@elrecreofutbol.com',
+      action: () => window.open('mailto:info@elrecreofutbol.com')
     },
     {
       icon: MapPin,
       title: 'Dirección',
-      content: 'Av. San Martín 1234, Buenos Aires',
-      action: () => window.open('https://maps.google.com')
+      content: '📍 Parque Chacabuco ',
+      action: () => window.open('https://share.google/RQdwMgslHCNRQC5ot')
     },
   ];
 
   const socialLinks = [
-    { icon: Instagram, url: 'https://instagram.com', label: 'Instagram' },
-    { icon: Facebook, url: 'https://facebook.com', label: 'Facebook' },
-    { icon: Twitter, url: 'https://twitter.com', label: 'Twitter' },
+    { icon: Instagram, url: 'https://instagram.com/elrecreofutbol/', label: 'Instagram' },
   ];
 
   return (
@@ -95,7 +52,7 @@ const Contact = () => {
             Contactanos
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Estamos para ayudarte. Envianos tu consulta y te responderemos a la brevedad
+            Nuestro canal principal de contacto es WhatsApp. También podés escribirnos o visitarnos cuando quieras.
           </p>
         </motion.div>
 
@@ -161,84 +118,12 @@ const Contact = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <form onSubmit={handleSubmit} className="bg-gray-50 rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Envianos un Mensaje
-              </h3>
-
-              <div className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Nombre completo *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#DBAA0C] focus:border-transparent transition-all"
-                    placeholder="Juan Pérez"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#DBAA0C] focus:border-transparent transition-all"
-                    placeholder="juan@ejemplo.com"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                    Teléfono
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#DBAA0C] focus:border-transparent transition-all"
-                    placeholder="+54 9 11 1234-5678"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Mensaje *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all resize-none"
-                    placeholder="Contanos en qué podemos ayudarte..."
-                    required
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-[#DBAA0C] to-[#5AA8D8] hover:from-[#DBAA0C]/90 hover:to-[#5AA8D8]/90 text-white py-6 text-lg group"
-                >
-                  Enviar Mensaje
-                  <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </div>
-            </form>
+            <div className="bg-gray-50 rounded-xl p-2 shadow-lg h-full flex items-center justify-center">
+              <img
+                src={contactImage}
+                className="w-full h-full max-h-[680px] object-cover rounded-lg"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
