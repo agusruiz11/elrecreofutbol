@@ -20,10 +20,10 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Escuela de Fútbol Infantil - Academia Deportiva para Niños en Argentina</title>
+        <title>El Recreo Fútbol</title>
         <meta
           name="description"
-          content="Escuela de fútbol infantil en Argentina. Entrenamiento profesional para niños de 4 a 16 años. Categorías por edad, equipo técnico calificado y metodología moderna."
+          content="Escuela de fútbol infantil en Argentina. Entrenamiento formativo para niños y adultos. Categorías por edad, equipo técnico calificado y metodología moderna."
         />
       </Helmet>
       <div className="min-h-screen bg-white">

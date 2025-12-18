@@ -42,7 +42,7 @@ const locations = [
       'Quiosco y espacios de recreación',
     ],
     mapSrc:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.454663961084!2d-58.448!3d-34.592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sParque%20Chacabuco!5e0!3m2!1ses-419!2sar!4v1700000000001',
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.976135467188!2d-58.43769982337254!3d-34.63004335889062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb04c418f0c5%3A0x6d73cc54afcd2c29!2sSan%20Diego%20Club%20F%C3%BAtbol%20%26%20Padel!5e0!3m2!1ses!2sar!4v1766030645526!5m2!1ses!2sar',
     images: [
       { id: 1, src: sanDiego1, alt: 'Cancha de fútbol en Club San Diego' },
     ],
