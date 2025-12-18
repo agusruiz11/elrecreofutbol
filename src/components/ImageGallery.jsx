@@ -49,6 +49,7 @@ const ImageGallery = ({
         <img
           src={currentImage.src}
           alt={currentImage.alt ?? 'Imagen de galería'}
+          loading="lazy"
           className="w-full h-full object-cover"
         />
       </div>

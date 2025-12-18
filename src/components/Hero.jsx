@@ -26,6 +26,7 @@ const Hero = () => {
           <img
             src={bgHero}
             alt="Background Hero"
+            // loading="lazy"
             className="w-full h-full object-cover"
             style={{ objectPosition: 'center bottom' }}
           />

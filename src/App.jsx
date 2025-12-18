@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Routes, Route } from 'react-router-dom';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
@@ -29,16 +30,36 @@ function App() {
       <div className="min-h-screen bg-white">
         <Header />
         <main>
-          <Hero />
-          <About />
-          <Location />
-          <Gira />
-          <HomeGallery />
-          <Categories />
-          {/* <Team /> */}
-          <Services />
-          <FAQ />
-          <Contact />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <About />
+                  <Location />
+                  <Categories />
+                  <Gira />
+                  <HomeGallery />
+                  {/* <Team /> */}
+                  <FAQ />
+                  <Contact />
+                </>
+              }
+            />
+
+            <Route
+              path="/precios"
+              element={
+                <>
+                  <Hero />
+                  <Services />
+                  <FAQ />
+                  <Contact />
+                </>
+              }
+            />
+          </Routes>
         </main>
         <Footer />
         <Toaster />
