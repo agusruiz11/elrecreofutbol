@@ -32,7 +32,7 @@ const HomeGallery = () => {
       {/* Sección 1: Momentos en El Recreo */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 md:mb-16">
         <div className="text-center mb-8 md:mb-10">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-2">
+          <h2 className="text-2xl md:text-5xl text-gray-900 mb-2 font-bangers tracking-wider">
             Momentos en El Recreo
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
@@ -47,7 +47,7 @@ const HomeGallery = () => {
       {/* Sección 2: Premios 2025 */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 md:mb-10">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-2">
+          <h2 className="text-2xl md:text-5xl text-gray-900 mb-2 font-bangers tracking-wider">
             Premios 2025
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">

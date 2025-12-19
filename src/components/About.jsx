@@ -41,7 +41,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-6xl text-gray-900 mb-4 font-bangers tracking-wider">
             Sobre El Recreo
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -67,7 +67,7 @@ const About = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">
+            <h3 className="text-3xl font-bold text-gray-900 mb-6 ">
               Nuestra Historia
             </h3>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">

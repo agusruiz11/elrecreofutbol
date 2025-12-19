@@ -78,7 +78,7 @@ const Location = () => {
     <section id="location" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-6xl text-gray-900 mb-4 font-bangers tracking-wider">
             Ubicación
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
@@ -97,7 +97,7 @@ const Location = () => {
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#96E0EF]/30 text-[#5AA8D8]">
                     <MapPin className="w-5 h-5" />
                   </span>
-                  <h3 className="text-2xl font-bold text-gray-900">
+                  <h3 className="text-4xl text-gray-900 font-bangers tracking-wider">
                     {loc.name}
                   </h3>
                 </div>

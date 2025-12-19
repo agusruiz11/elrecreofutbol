@@ -95,7 +95,7 @@ const Categories = () => {
       color: 'from-[#DBAA0C]/50 to-[#DBAA0C]',
       groups: [
         {
-          age: 'Femenino 2° a 5° grado',
+          age: '2° a 5° grado',
           slots: [
             {
               schedule: 'Lunes 19hs',
@@ -104,7 +104,7 @@ const Categories = () => {
           ],
         },
         {
-          age: 'Femenino 6° y 7° grado',
+          age: '6° y 7° grado',
           slots: [
             {
               schedule: 'Miércoles 18hs',
@@ -159,7 +159,7 @@ const Categories = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-6xl text-gray-900 mb-4 font-bangers tracking-wider">
             Categorías, días y Horarios 2026
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

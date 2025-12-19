@@ -84,7 +84,7 @@ const Gira = () => {
             <p className="text-sm font-semibold uppercase tracking-widest text-amber-500 mb-2">
               Gira deportiva
             </p>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-5xl text-gray-900 mb-4 font-bangers tracking-wider">
               GIRA 2026
             </h2>
             <p className="text-gray-700 mb-4 text-sm md:text-base leading-relaxed">

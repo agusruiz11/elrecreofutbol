@@ -101,7 +101,7 @@ const Header = () => {
                 key={item.id}
                 onClick={() => handleNavClick(item)}
                 className={`font-bold text-xl transition-colors drop-shadow-[3px_6px_6px_rgba(0,0,0,1)] hover:drop-shadow-none hover:text-[#F9BD1A] ${
-                  isScrolled ? 'text-gray-700 drop-shadow-none hover:bg-transparent hover:text-white' : 'text-white'
+                  isScrolled ? 'text-gray-700 drop-shadow-none hover:bg-transparent hover:text[#F9BD1A]' : 'text-white'
                 }`}
               >
                 {item.label}

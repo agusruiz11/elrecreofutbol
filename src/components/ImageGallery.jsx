@@ -16,6 +16,8 @@ const ImageGallery = ({
   showDots,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStartX, setTouchStartX] = useState(null);
+  const [touchEndX, setTouchEndX] = useState(null);
 
   if (!images || images.length === 0) {
     return (
@@ -41,11 +43,43 @@ const ImageGallery = ({
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+    setTouchEndX(null);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX === null || touchEndX === null) return;
+
+    const distance = touchStartX - touchEndX;
+    const minSwipeDistance = 40; // píxeles mínimos para considerar swipe
+
+    if (distance > minSwipeDistance) {
+      // swipe hacia la izquierda → siguiente
+      handleNext();
+    } else if (distance < -minSwipeDistance) {
+      // swipe hacia la derecha → anterior
+      handlePrev();
+    }
+
+    setTouchStartX(null);
+    setTouchEndX(null);
+  };
+
   const currentImage = images[currentIndex];
 
   return (
     <div className={`relative bg-gray-100 rounded-xl overflow-hidden shadow-md ${className}`}>
-      <div className="aspect-video w-full overflow-hidden bg-black/10">
+      <div
+        className="aspect-video w-full overflow-hidden bg-black/10"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <img
           src={currentImage.src}
           alt={currentImage.alt ?? 'Imagen de galería'}

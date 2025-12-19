@@ -40,7 +40,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-[0_8px_10px_rgba(0,0,0,0.85)] mb-6 leading-tight">
+            <h1 className="text-5xl md:text-8xl font-bold text-white drop-shadow-[0_8px_10px_rgba(0,0,0,0.85)] mb-6 leading-tight font-bangers tracking-wider">
               El Recreo Fútbol
             </h1>
             <p className="text-xl md:text-2xl text-white drop-shadow-[0_8px_10px_rgba(0,0,0,0.85)] mb-8 max-w-2xl mx-auto">

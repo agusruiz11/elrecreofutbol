@@ -31,15 +31,15 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden bg-white flex items-center justify-center">
+            <div className="flex items-center space-x-3 mb-4 justify-center">
+              <div className="w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 overflow-hidden flex items-center justify-center">
                 <img
                   src={logo}
                   alt="El Recreo Fútbol"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="text-lg md:text-xl font-bold">El Recreo Fútbol</span>
+              {/* <span className="text-lg md:text-xl font-bold">El Recreo Fútbol</span> */}
             </div>
             <p className="text-gray-400 mb-4">
               Escuela de fútbol femenino y masculino en Parque Chacabuco (CABA), con sedes en Complejo Chacabuco
