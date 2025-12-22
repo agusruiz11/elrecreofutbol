@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ChevronRight, Trophy, Users, Target } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import bgHero from '@/assets/hero/bg1.jpg';
+import bgHeroMobile from '@/assets/hero/bgMobile.jpg';
 
 const Hero = () => {
   const scrollToSection = (id) => {
@@ -23,11 +24,18 @@ const Hero = () => {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-30">
       <div className="absolute inset-0 bg-gradient-to-bl from-sky-500 via-black to-sky-500">
         <div className="absolute inset-0 opacity-30">
+          {/* Imagen para mobile */}
+          <img
+            src={bgHeroMobile}
+            alt="Background Hero Mobile"
+            className="w-full h-full object-cover md:hidden"
+            style={{ objectPosition: 'center bottom' }}
+          />
+          {/* Imagen para desktop */}
           <img
             src={bgHero}
             alt="Background Hero"
-            // loading="lazy"
-            className="w-full h-full object-cover"
+            className="hidden md:block w-full h-full object-cover"
             style={{ objectPosition: 'center bottom' }}
           />
         </div>

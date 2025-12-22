@@ -16,6 +16,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import Location from '@/components/Location';
 import HomeGallery from '@/components/HomeGallery';
 import Gira from '@/components/Gira';
+import Products from '@/components/Products';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
                   <Location />
                   <Categories />
                   <Gira />
+                  <Products />
                   <HomeGallery />
                   {/* <Team /> */}
                   <FAQ />

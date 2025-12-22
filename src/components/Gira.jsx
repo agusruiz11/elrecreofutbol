@@ -5,15 +5,13 @@ import ImageGallery from '@/components/ImageGallery';
 // Podés agregar, quitar o cambiar las rutas según tus assets
 import gira1 from '@/assets/photos/gira/GIRA 2026.png';
 import gira2 from '@/assets/photos/gira/20251205_114623.jpg';
-import gira3 from '@/assets/photos/gira/20251205_114842.jpg';
-import gira4 from '@/assets/photos/gira/20251205_115020.jpg';
-import gira5 from '@/assets/photos/gira/20251205_115132.jpg';
-import gira6 from '@/assets/photos/gira/20251205_115712.jpg';
-import gira7 from '@/assets/photos/gira/20251205_115714.jpg';
-import gira8 from '@/assets/photos/gira/20251205_115855.jpg';
-import gira9 from '@/assets/photos/gira/20251205_115858.jpg';
-import gira10 from '@/assets/photos/gira/20251205_120402.jpg';
-import gira11 from '@/assets/photos/gira/20251205_120457.jpg';
+import gira3 from '@/assets/photos/gira/20251207_093224.jpg';
+import gira4 from '@/assets/photos/gira/Screenshot_20251218_131944_Gallery.jpg';
+import gira5 from '@/assets/photos/gira/Screenshot_20251218_132007_Gallery.jpg';
+import gira6 from '@/assets/photos/gira/Screenshot_20251218_132032_Gallery.jpg';
+import gira7 from '@/assets/photos/gira/Screenshot_20251218_132055_Gallery.jpg';
+import gira8 from '@/assets/photos/gira/Screenshot_20251218_132142_Gallery.jpg';
+import gira9 from '@/assets/photos/gira/Screenshot_20251218_132212_Gallery.jpg';
 
 const imagesGira2026 = [
   {
@@ -59,16 +57,6 @@ const imagesGira2026 = [
   {
     id: 9,
     src: gira9,
-    alt: 'Gira deportiva 2025 - equipo disfrutando del viaje',
-  },
-  {
-    id: 10,
-    src: gira10,
-    alt: 'Gira deportiva 2025 - equipo disfrutando del viaje',
-  },
-  {
-    id: 11,
-    src: gira11,
     alt: 'Gira deportiva 2025 - equipo disfrutando del viaje',
   },
   // Agregá más objetos aquí cuando tengas más fotos

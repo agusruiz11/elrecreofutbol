@@ -60,6 +60,7 @@ const Header = () => {
     { label: 'Ubicación', id: 'location' },
     { label: 'Categorías y Horarios', id: 'categories' },
     { label: 'Precios', id: 'services' },
+    { label: 'Productos', id: 'products' },
     { label: 'Gira 2026', id: 'gira' },
     { label: 'Fotos', id: 'gallery' },
     { label: 'FAQ', id: 'faq' },

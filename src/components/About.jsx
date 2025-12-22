@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { Target, Award, Heart, Zap } from 'lucide-react';
-import bgAbout from '@/assets/hero/bg2.jpg';
+import bgAbout from '@/assets/hero/bg1.jpg';
 
 const About = () => {
   const ref = React.useRef(null);
