@@ -52,7 +52,7 @@ const Hero = () => {
               El Recreo Fútbol
             </h1>
             <p className="text-xl md:text-2xl text-white drop-shadow-[0_8px_10px_rgba(0,0,0,0.85)] mb-8 max-w-2xl mx-auto">
-              Academia de fútbol femenino y masculino para niños y jóvenes de 4 a 18 años
+              Academia de fútbol femenino y masculino para niños, jóvenes y adultos.
               <br></br>📍 Parque Chacabuco, CABA
             </p>
           </motion.div>
@@ -99,7 +99,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#E8F4F8] to-transparent"></div>
     </section>
   );
 };

@@ -75,7 +75,7 @@ const Location = () => {
   };
 
   return (
-    <section id="location" className="py-20 bg-white">
+    <section id="location" className="py-20 bg-[#E8F4F8]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-4xl md:text-6xl text-gray-900 mb-4 font-bangers tracking-wider">
@@ -90,7 +90,7 @@ const Location = () => {
           {locations.map((loc) => (
             <div
               key={loc.name}
-              className="bg-gray-50 rounded-2xl shadow-lg overflow-hidden flex flex-col"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col"
             >
               <div className="p-6 flex-1 flex flex-col gap-4">
                 <div className="flex items-center gap-2 mb-2">

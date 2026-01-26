@@ -72,7 +72,7 @@ const Header = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/70 shadow-lg' : 'bg-transparent'
+        isScrolled ? 'bg-[#E8F4F8]/90 backdrop-blur-sm shadow-lg' : 'bg-transparent'
       }`}
     >
       <nav className="container mx-auto px-4 py-4">
@@ -138,7 +138,7 @@ const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden mt-4 pb-4 bg-white rounded-lg shadow-lg"
+            className="md:hidden mt-4 pb-4 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg"
           >
             {navItems.map((item) => (
               <button

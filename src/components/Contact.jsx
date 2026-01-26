@@ -39,7 +39,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white" ref={ref}>
+    <section id="contact" className="py-20 bg-[#E8F4F8]" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -72,7 +72,7 @@ const Contact = () => {
                   <button
                     key={index}
                     onClick={info.action}
-                    className="flex items-start gap-4 w-full max-w-md text-left hover:bg-gray-50 p-4 rounded-lg transition-colors group mx-auto"
+                    className="flex items-start gap-4 w-full max-w-md text-left hover:bg-white/50 p-4 rounded-lg transition-colors group mx-auto"
                   >
                     <div className="w-12 h-12 bg-gradient-to-br from-[#DBAA0C] to-[#5AA8D8] rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                       <info.icon className="w-6 h-6 text-white" />

@@ -28,7 +28,7 @@ const imagesPremios2025 = Object.values(premiosImports).map((src, index) => ({
 
 const HomeGallery = () => {
   return (
-    <section className="bg-gray-50 py-12 md:py-16" id="gallery">
+    <section className="bg-[#E8F4F8] py-12 md:py-16" id="gallery">
       {/* Sección 1: Momentos en El Recreo */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 md:mb-16">
         <div className="text-center mb-8 md:mb-10">

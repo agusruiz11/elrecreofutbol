@@ -64,7 +64,7 @@ const imagesGira2026 = [
 
 const Gira = () => {
   return (
-    <section className="bg-white py-12 md:py-16" id="gira">
+    <section className="bg-[#E8F4F8] py-12 md:py-16" id="gira">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           {/* Columna de texto */}

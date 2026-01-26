@@ -17,7 +17,7 @@ const Categories = () => {
       color: 'from-yellow-400 to-orange-500',
       groups: [
         {
-          age: 'Sala de 3 y 4',
+          age: 'Sala de 3 y 4 años',
           slots: [
             {
               schedule: 'Lunes y Miércoles 17hs',
@@ -26,7 +26,7 @@ const Categories = () => {
           ],
         },
         {
-          age: 'Sala de 5',
+          age: 'Sala de 5 años',
           slots: [
             {
               schedule: 'Lunes y Miércoles 17hs',
@@ -151,7 +151,7 @@ const Categories = () => {
   ];
 
   return (
-    <section id="categories" className="py-20 bg-white" ref={ref}>
+    <section id="categories" className="py-20 bg-[#E8F4F8]" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -242,7 +242,7 @@ const Categories = () => {
             </h3>
           </div>
           <p className="text-gray-700 max-w-3xl mx-auto">
-          Las clases se dictan de marzo a diciembre, desde el lunes 2/03 hasta el viernes 18/12.
+          Las clases se dictan de marzo a diciembre.
           <br />
           Entrenamos en nuestras dos sedes de Parque Chacabuco (Complejo Chacabuco y Club San Diego), en canchas de césped sintético techadas, con vestuarios para niños y niñas.
           <br />

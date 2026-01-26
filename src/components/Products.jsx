@@ -25,7 +25,7 @@ const Products = () => {
   ];
 
   return (
-    <section id="products" className="py-20 bg-white" ref={ref}>
+    <section id="products" className="py-20 bg-[#E8F4F8]" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -7,8 +7,10 @@ import About from '@/components/About';
 import Categories from '@/components/Categories';
 import Team from '@/components/Team';
 import Services from '@/components/Services';
+import Socios from '@/components/Socios';
 import FAQ from '@/components/FAQ';
 import Contact from '@/components/Contact';
+import Sponsors from '@/components/Sponsors';
 import Footer from '@/components/Footer';
 import { Toaster } from '@/components/ui/toaster';
 import ScrollToTop from '@/components/ScrollToTop';
@@ -28,7 +30,7 @@ function App() {
           content="Escuela de fútbol infantil en Argentina. Entrenamiento formativo para niños y adultos. Categorías por edad, equipo técnico calificado y metodología moderna."
         />
       </Helmet>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-[#E8F4F8]">
         <Header />
         <main>
           <Routes>
@@ -46,6 +48,7 @@ function App() {
                   {/* <Team /> */}
                   <FAQ />
                   <Contact />
+                  <Sponsors />
                 </>
               }
             />
@@ -58,6 +61,20 @@ function App() {
                   <Services />
                   <FAQ />
                   <Contact />
+                  <Sponsors />
+                </>
+              }
+            />
+
+            <Route
+              path="/socios"
+              element={
+                <>
+                  <Hero />
+                  <Socios />
+                  <FAQ />
+                  <Contact />
+                  <Sponsors />
                 </>
               }
             />

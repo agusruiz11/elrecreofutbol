@@ -14,7 +14,7 @@ import kids1 from '@/assets/brand/Frase-2026.png';
 import kids2 from '@/assets/brand/Inscripciones-Abiertas-2026.png';
 
 
-const Services = () => {
+const Socios = () => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
@@ -362,7 +362,7 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  {/* <Button
+                  <Button
                     asChild
                     className="w-full mt-auto bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 text-base md:text-lg"
                   >
@@ -370,7 +370,7 @@ const Services = () => {
                       Pagar con Mercado Pago
                       <ExternalLink className="inline-block ml-2 w-4 h-4 align-middle" />
                     </a>
-                  </Button> */}
+                  </Button>
                 </div>
               </motion.div>
             ))}
@@ -431,7 +431,7 @@ const Services = () => {
                         </li>
                       ))}
                     </ul>
-                    {/* <Button
+                    <Button
                       asChild
                       className="w-full mt-auto bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 text-base md:text-lg"
                     >
@@ -439,7 +439,7 @@ const Services = () => {
                         Pagar con Mercado Pago
                         <ExternalLink className="inline-block ml-2 w-4 h-4 align-middle" />
                       </a>
-                    </Button> */}
+                    </Button>
                   </div>
                 </motion.div>
               ))}
@@ -481,7 +481,7 @@ const Services = () => {
                         </li>
                       ))}
                     </ul>
-                    {/* <Button
+                    <Button
                       asChild
                       className="w-full mt-auto bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 text-base md:text-lg"
                     >
@@ -489,7 +489,7 @@ const Services = () => {
                         Pagar con Mercado Pago
                         <ExternalLink className="inline-block ml-2 w-4 h-4 align-middle" />
                       </a>
-                    </Button> */}
+                    </Button>
                   </div>
                 </motion.div>
               ))}
@@ -547,7 +547,7 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  {/* <Button
+                  <Button
                     asChild
                     className="w-full mt-auto bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 text-base md:text-lg"
                   >
@@ -555,7 +555,7 @@ const Services = () => {
                       Pagar con Mercado Pago
                       <ExternalLink className="inline-block ml-2 w-4 h-4 align-middle" />
                     </a>
-                  </Button> */}
+                  </Button>
                 </div>
               </motion.div>
             ))}
@@ -685,4 +685,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Socios;

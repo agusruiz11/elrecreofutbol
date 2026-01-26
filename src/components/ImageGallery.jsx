@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 /**
  * Galería de imágenes reutilizable
@@ -18,11 +18,13 @@ const ImageGallery = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState(null);
   const [touchEndX, setTouchEndX] = useState(null);
+  const [imageOrientation, setImageOrientation] = useState('horizontal'); // 'horizontal' | 'vertical'
+  const imgRef = useRef(null);
 
   if (!images || images.length === 0) {
     return (
       <div
-        className={`relative bg-gray-100 rounded-xl overflow-hidden shadow-md flex items-center justify-center aspect-video ${className}`}
+        className={`relative bg-white/80 rounded-xl overflow-hidden shadow-md flex items-center justify-center aspect-video ${className}`}
       >
         <span className="text-gray-400 text-sm md:text-base font-medium text-center px-4">
           Próximamente vas a poder ver fotos acá.
@@ -34,6 +36,21 @@ const ImageGallery = ({
   const hasMultiple = images.length > 1;
   const arrowsEnabled = showArrows ?? hasMultiple;
   const dotsEnabled = showDots ?? hasMultiple;
+
+  // Detectar orientación de la imagen actual
+  useEffect(() => {
+    if (imgRef.current && imgRef.current.complete) {
+      const img = imgRef.current;
+      const isVertical = img.naturalHeight > img.naturalWidth;
+      setImageOrientation(isVertical ? 'vertical' : 'horizontal');
+    }
+  }, [currentIndex]);
+
+  const handleImageLoad = (e) => {
+    const img = e.target;
+    const isVertical = img.naturalHeight > img.naturalWidth;
+    setImageOrientation(isVertical ? 'vertical' : 'horizontal');
+  };
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
@@ -73,18 +90,22 @@ const ImageGallery = ({
   const currentImage = images[currentIndex];
 
   return (
-    <div className={`relative bg-gray-100 rounded-xl overflow-hidden shadow-md ${className}`}>
+    <div className={`relative bg-white/80 rounded-xl overflow-hidden shadow-md ${className}`}>
       <div
-        className="aspect-video w-full overflow-hidden bg-black/10"
+        className={`w-full overflow-hidden bg-black/10 flex items-center justify-center ${
+          imageOrientation === 'vertical' ? 'aspect-[3/4] max-h-[600px]' : 'aspect-video'
+        }`}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
         <img
+          ref={imgRef}
           src={currentImage.src}
           alt={currentImage.alt ?? 'Imagen de galería'}
           loading="lazy"
-          className="w-full h-full object-cover"
+          onLoad={handleImageLoad}
+          className="w-full h-full object-contain"
         />
       </div>
 
