@@ -21,7 +21,7 @@ const Socios = () => {
   const menoresPlans = [
     {
       name: 'Individual 1 vez por semana',
-      price: '$58.000',
+      price: '$56.000',
       subtitle: '/ mes',
       features: [
         '1 entrenamiento semanal',
@@ -32,7 +32,7 @@ const Socios = () => {
     },
     {
       name: 'Individual LIBRE',
-      price: '$65.000',
+      price: '$66.000',
       subtitle: '/ mes',
       features: [
         'Hasta 2 entrenamientos por semana',
@@ -44,7 +44,7 @@ const Socios = () => {
     },
     {
       name: 'Extra: Competencia',
-      price: '$15.000',
+      price: '$17.000',
       subtitle: '/ mes',
       features: [
         'Valor torneto apertura total p/ niño/a: $75.000 / mes',
@@ -58,7 +58,7 @@ const Socios = () => {
   const pack2Plans = [
     {
       name: 'Pack familiar 1 v/s',
-      price: '$104.400',
+      price: '$95.200',
       subtitle: '/ mes',
       features: [
         'Pack familiar x2 (10% descuento)',
@@ -69,7 +69,7 @@ const Socios = () => {
     },
     {
       name: 'Pack familiar LIBRE',
-      price: '$117.000',
+      price: '$112.200',
       subtitle: '/ mes',
       features: [
         'Pack familiar x2 (10% descuento)',
@@ -80,7 +80,7 @@ const Socios = () => {
     },
     {
       name: 'Pack familiar 1/2',
-      price: '$110.700',
+      price: '$103.700',
       subtitle: '/ mes',
       features: [
         'Pack familiar x2 (10% descuento)',
@@ -94,7 +94,7 @@ const Socios = () => {
   const pack3Plans = [
     {
       name: 'Pack familiar 1 v/s',
-      price: '$147.900',
+      price: '$142.800',
       subtitle: '/ mes',
       features: [
         'Pack familiar x3 (15% descuento)',
@@ -105,7 +105,7 @@ const Socios = () => {
     },
     {
       name: 'Pack familiar LIBRE',
-      price: '$165.750',
+      price: '$168.300',
       subtitle: '/ mes',
       features: [
         'Pack familiar x3 (15% descuento)',
@@ -116,7 +116,7 @@ const Socios = () => {
     },
     {
       name: 'Pack familiar 1/3 (uno libre)',
-      price: '$153.850',
+      price: '$151.300',
       subtitle: '/ mes',
       features: [
         'Pack familiar x3 (15% descuento)',
@@ -141,7 +141,7 @@ const Socios = () => {
   const adultosPlans = [
     {
       name: 'Adultos Mixtos - Con niños',
-      price: '$49.300',
+      price: '$50.400',
       subtitle: '/ mes',
       features: [
         '1 vez por semana',
@@ -152,7 +152,7 @@ const Socios = () => {
     },
     {
       name: 'Adultos Mixtos - Sin niños',
-      price: '$58.000',
+      price: '$56.000',
       subtitle: '/ mes',
       features: [
         '1 vez por semana',
@@ -375,6 +375,19 @@ const Socios = () => {
               </motion.div>
             ))}
           </div>
+          <div className="mt-8 max-w-4xl mx-auto mb-10">
+            <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
+              <p className="text-sm text-gray-600 mb-1">
+              Podrán abonar en <b>efectivo</b> dentro de un sobre con nombre y apellido, con un <b>descuento</b> total de
+              </p>
+              <p className="text-lg md:text-xl font-bold text-gray-900 mb-1">
+                $1.000
+              </p>
+              <p className="text-xs md:text-sm text-gray-600">
+                abonándolo durante los <b>primeros 10 días</b>, sino se mantendrá el mismo valor que en transferencia.
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         {/* Descuentos para familias - Tarjetas */}
@@ -495,6 +508,19 @@ const Socios = () => {
               ))}
             </div>
           </div>
+          <div className="mt-8 max-w-4xl mx-auto mb-10">
+            <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
+              <p className="text-sm text-gray-600 mb-1">
+              Podrán abonar en <b>efectivo</b> dentro de un sobre con nombre y apellido, con un <b>descuento</b> total de
+              </p>
+              <p className="text-lg md:text-xl font-bold text-gray-900 mb-1">
+                $1.000
+              </p>
+              <p className="text-xs md:text-sm text-gray-600">
+                abonándolo durante los <b>primeros 10 días</b>, sino se mantendrá el mismo valor que en transferencia.
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         {/* Fútbol Adultos */}
@@ -559,6 +585,19 @@ const Socios = () => {
                 </div>
               </motion.div>
             ))}
+          </div>
+          <div className="mt-8 max-w-4xl mx-auto mb-10">
+            <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
+              <p className="text-sm text-gray-600 mb-1">
+              Podrán abonar en <b>efectivo</b> dentro de un sobre con nombre y apellido, con un <b>descuento</b> total de
+              </p>
+              <p className="text-lg md:text-xl font-bold text-gray-900 mb-1">
+                $1.000
+              </p>
+              <p className="text-xs md:text-sm text-gray-600">
+                abonándolo durante los <b>primeros 10 días</b>, sino se mantendrá el mismo valor que en transferencia.
+              </p>
+            </div>
           </div>
 
           {/* Información sobre matrícula adultos */}

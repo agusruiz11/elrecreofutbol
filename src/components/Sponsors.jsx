@@ -1,7 +1,9 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
+
+import logoBuenosFrutos from '../assets/sponsors/logo-buenos-frutos-white.svg';
+import logoFinal from '../assets/sponsors/logofinal-new-white.png';
 
 const Sponsors = () => {
   const ref = React.useRef(null);
@@ -10,14 +12,14 @@ const Sponsors = () => {
   // Array de sponsors - por ahora 2, fácil de expandir
   const sponsors = [
     {
-      name: 'Sponsor 1',
-      logo: '/logo.png', // Ruta a la imagen del logo
-      url: 'https://example.com' // URL del sponsor
+      name: 'Cervi',
+      logo: logoBuenosFrutos,
+      url: 'https://www.cervi.com.ar/' // URL del sponsor
     },
     {
-      name: 'Sponsor 2',
-      logo: '/logo.png', // Ruta a la imagen del logo
-      url: 'https://example.com' // URL del sponsor
+      name: 'Panizza',
+      logo: logoFinal,
+      url: 'http://sodapanizza.com.ar/' // URL del sponsor
     }
   ];
 
@@ -55,11 +57,11 @@ const Sponsors = () => {
               transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
               className="group"
             >
-              <div className="bg-white rounded-xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
+              <div className="bg-[#5CA8D4]/80 rounded-xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
                 <img
                   src={sponsor.logo}
                   alt={sponsor.name}
-                  className="h-16 md:h-24 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  className="h-16 md:h-24 w-auto object-contain transition-all duration-300"
                 />
               </div>
             </motion.a>
