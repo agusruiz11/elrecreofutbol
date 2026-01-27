@@ -202,11 +202,9 @@ const Socios = () => {
               </div>
             </div>
             <p className="text-gray-700 mb-4">
-              Si nunca viniste a El Recreo Fútbol, podés probar una clase antes de inscribirte. El día de prueba no
-              genera cupo oficial, pero te da prioridad en la lista de espera en caso de que no haya lugares
-              disponibles.
+              Si nunca participaste de El Recreo Fútbol y queres tener tu día de prueba, podés hacerlo. <br/>Inscribite en el siguiente link: La inscripción es gratuita, y después de probar una clase elegís si continuas.
             </p>
-            <p className="text-sm text-gray-600 italic mb-6">
+            <p className="text-md text-gray-600 italic mb-6">
               - El día de prueba está pensado únicamente para quienes nunca participaron de El Recreo Fútbol.
             </p>
             <Button
@@ -252,13 +250,13 @@ const Socios = () => {
                 <p className="text-sm font-semibold text-[#DBAA0C] mb-1">
                   Febrero (20% de descuento)
                 </p>
-                <p className="text-2xl font-bold text-gray-900">$53.000</p>
+                <p className="text-2xl font-bold text-gray-900">$54.500</p>
               </div>
               <div className="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
                 <p className="text-sm font-semibold text-[#DBAA0C] mb-1">
                   Marzo a octubre
                 </p>
-                <p className="text-2xl font-bold text-gray-900">$63.000</p>
+                <p className="text-2xl font-bold text-gray-900">$64.500</p>
               </div>
               <div className="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
                 <p className="text-sm font-semibold text-[#DBAA0C] mb-1">
@@ -377,13 +375,13 @@ const Socios = () => {
           </div>
           <div className="mt-8 max-w-4xl mx-auto mb-10">
             <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
-              <p className="text-sm text-gray-600 mb-1">
+              <p className="text-md text-gray-600 mb-1">
               Podrán abonar en <b>efectivo</b> dentro de un sobre con nombre y apellido, con un <b>descuento</b> total de
               </p>
-              <p className="text-lg md:text-xl font-bold text-gray-900 mb-1">
+              <p className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
                 $1.000
               </p>
-              <p className="text-xs md:text-sm text-gray-600">
+              <p className="text-md text-gray-600">
                 abonándolo durante los <b>primeros 10 días</b>, sino se mantendrá el mismo valor que en transferencia.
               </p>
             </div>
@@ -510,13 +508,13 @@ const Socios = () => {
           </div>
           <div className="mt-8 max-w-4xl mx-auto mb-10">
             <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
-              <p className="text-sm text-gray-600 mb-1">
+              <p className="text-md text-gray-600 mb-1">
               Podrán abonar en <b>efectivo</b> dentro de un sobre con nombre y apellido, con un <b>descuento</b> total de
               </p>
-              <p className="text-lg md:text-xl font-bold text-gray-900 mb-1">
+              <p className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
                 $1.000
               </p>
-              <p className="text-xs md:text-sm text-gray-600">
+              <p className="text-md text-gray-600">
                 abonándolo durante los <b>primeros 10 días</b>, sino se mantendrá el mismo valor que en transferencia.
               </p>
             </div>
@@ -588,13 +586,13 @@ const Socios = () => {
           </div>
           <div className="mt-8 max-w-4xl mx-auto mb-10">
             <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
-              <p className="text-sm text-gray-600 mb-1">
+                <p className="text-md text-gray-600 mb-1">
               Podrán abonar en <b>efectivo</b> dentro de un sobre con nombre y apellido, con un <b>descuento</b> total de
               </p>
-              <p className="text-lg md:text-xl font-bold text-gray-900 mb-1">
+              <p className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
                 $1.000
               </p>
-              <p className="text-xs md:text-sm text-gray-600">
+              <p className="text-md text-gray-600">
                 abonándolo durante los <b>primeros 10 días</b>, sino se mantendrá el mismo valor que en transferencia.
               </p>
             </div>
@@ -603,13 +601,13 @@ const Socios = () => {
           {/* Información sobre matrícula adultos */}
           <div className="mt-8 max-w-4xl mx-auto">
             <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
-              <p className="text-sm font-semibold text-[#DBAA0C] mb-1">
+              <p className="text-md font-semibold text-[#DBAA0C] mb-1">
                 Matrícula anual
               </p>
-              <p className="text-lg md:text-xl font-bold text-gray-900 mb-1">
+              <p className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
                 $40.000
               </p>
-              <p className="text-xs md:text-sm text-gray-600">
+              <p className="text-md text-gray-600">
                 Incluye remera oficial de entrenamiento.
               </p>
             </div>
@@ -630,7 +628,7 @@ const Socios = () => {
               </div>
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
-                  Competencias – Liga Formativa de Fútbol
+                  Competencias – Liga Formativa de Fútbol Masculina
                 </h3>
               </div>
             </div>
@@ -656,7 +654,7 @@ const Socios = () => {
                   <div className="flex justify-center">
                     <Button
                       asChild
-                      className="w-full md:w-64 flex items-center justify-center gap-2 md:h-12 px-5 py-3 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-xl text-base md:text-lg"
+                      className="w-full md:w-64 flex items-center justify-center gap-2 md:h-12 px-5 py-3 bg-[#5CA8D4] hover:bg-gray-800 text-gray-900 hover:text-white font-semibold rounded-xl text-base md:text-lg"
                     >
                       <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -670,9 +668,68 @@ const Socios = () => {
                 </div>
               </div>
             </div>
-            <p className="text-xs md:text-sm text-gray-600 italic mt-3">
+            {/* <p className="text-xs md:text-sm text-gray-600 italic mt-3">
               Nota: Por el momento el femenino no compite en liga, pero estamos evaluando opciones para el futuro.
-            </p>
+            </p> */}
+          </div>
+        </motion.div>
+
+        {/* Competencias – Torneo Open Gallo */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mb-12"
+        >
+          <div className="bg-white rounded-2xl shadow-lg border-l-4 border-l-[#5CA8D4] border border-gray-100 p-6 md:p-8">
+            <div className="flex items-start gap-3 mb-4">
+              <div className="w-10 h-10 rounded-full bg-[#5CA8D4]/10 flex items-center justify-center">
+                <Trophy className="w-5 h-5 text-[#5CA8D4]" />
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  Competencias – Torneo Open Gallo de Fútbol Femenino
+                </h3>
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-start">
+              {/* Lista a la izquierda */}
+              <div className="flex-1 min-w-0">
+                <ul className="space-y-1 text-gray-700 text-sm md:text-base mb-3 md:mb-0">
+                  <li>• Torneo Open Gallo de Fútbol Femenino.</li>
+                  <li>• Sede: Open Gallo (Gallo 241, C1172 Cdad. Autónoma de Buenos Aires)</li>
+                  <li>• ​Cuenta con 4 canchas techadas (Se juega igualmente aunque llueva).</li>
+                  <li>• Se juega cada 15 días.</li>
+                  <li>• Modalidad: Todos contra todos.</li>
+                  <li>• ​Arranca en fines de marzo/principio de abril.</li>
+                </ul>
+              </div>
+              {/* Botón a la derecha */}
+              <div className="flex-shrink-0 w-full md:w-auto">
+                <div className="mb-2">
+                  <h4 className="text-base md:text-lg font-semibold text-gray-900 text-center mb-2">
+                    Pre-inscribite completando el siguiente formulario
+                  </h4>
+                  <div className="flex justify-center">
+                    <Button
+                      asChild
+                      className="w-full md:w-64 flex items-center justify-center gap-2 md:h-12 px-5 py-3 bg-[#DBAA0C] hover:bg-gray-800 text-gray-900 hover:text-white font-semibold rounded-xl text-base md:text-lg"
+                    >
+                      <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                          <path d="M8 10h8M8 14h5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                        </svg>
+                        Formulario
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <p className="text-xs md:text-sm text-gray-600 italic mt-3">
+              Nota: Por el momento el femenino no compite en liga, pero estamos evaluando opciones para el futuro.
+            </p> */}
           </div>
         </motion.div>
 

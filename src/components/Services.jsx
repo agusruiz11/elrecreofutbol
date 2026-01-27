@@ -202,9 +202,7 @@ const Services = () => {
               </div>
             </div>
             <p className="text-gray-700 mb-4">
-              Si nunca viniste a El Recreo Fútbol, podés probar una clase antes de inscribirte. El día de prueba no
-              genera cupo oficial, pero te da prioridad en la lista de espera en caso de que no haya lugares
-              disponibles.
+              Si nunca participaste de El Recreo Fútbol y queres tener tu día de prueba, podés hacerlo. <br/>Inscribite en el siguiente link: La inscripción es gratuita, y después de probar una clase elegís si continuas.
             </p>
             <p className="text-sm text-gray-600 italic mb-6">
               - El día de prueba está pensado únicamente para quienes nunca participaron de El Recreo Fútbol.
@@ -252,13 +250,13 @@ const Services = () => {
                 <p className="text-sm font-semibold text-[#DBAA0C] mb-1">
                   Febrero (20% de descuento)
                 </p>
-                <p className="text-2xl font-bold text-gray-900">$53.000</p>
+                <p className="text-2xl font-bold text-gray-900">$54.500</p>
               </div>
               <div className="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
                 <p className="text-sm font-semibold text-[#DBAA0C] mb-1">
                   Marzo a octubre
                 </p>
-                <p className="text-2xl font-bold text-gray-900">$63.000</p>
+                <p className="text-2xl font-bold text-gray-900">$64.500</p>
               </div>
               <div className="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
                 <p className="text-sm font-semibold text-[#DBAA0C] mb-1">
@@ -377,13 +375,13 @@ const Services = () => {
           </div>
           <div className="mt-8 max-w-4xl mx-auto mb-10">
             <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
-              <p className="text-sm text-gray-600 mb-1">
+              <p className="text-md text-gray-600 mb-1">
               Podrán abonar en <b>efectivo</b> dentro de un sobre con nombre y apellido, con un <b>descuento</b> total de
               </p>
-              <p className="text-lg md:text-xl font-bold text-gray-900 mb-1">
+              <p className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
                 $1.000
               </p>
-              <p className="text-xs md:text-sm text-gray-600">
+              <p className="text-md text-gray-600">
                 abonándolo durante los <b>primeros 10 días</b>, sino se mantendrá el mismo valor que en transferencia.
               </p>
             </div>
@@ -510,13 +508,13 @@ const Services = () => {
           </div>
           <div className="mt-8 max-w-4xl mx-auto mb-10">
             <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
-              <p className="text-sm text-gray-600 mb-1">
+              <p className="text-md text-gray-600 mb-1">
               Podrán abonar en <b>efectivo</b> dentro de un sobre con nombre y apellido, con un <b>descuento</b> total de
               </p>
-              <p className="text-lg md:text-xl font-bold text-gray-900 mb-1">
+              <p className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
                 $1.000
               </p>
-              <p className="text-xs md:text-sm text-gray-600">
+              <p className="text-md text-gray-600">
                 abonándolo durante los <b>primeros 10 días</b>, sino se mantendrá el mismo valor que en transferencia.
               </p>
             </div>
@@ -588,13 +586,13 @@ const Services = () => {
           </div>
           <div className="mt-8 max-w-4xl mx-auto mb-10">
             <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
-              <p className="text-sm text-gray-600 mb-1">
+              <p className="text-md text-gray-600 mb-1">
               Podrán abonar en <b>efectivo</b> dentro de un sobre con nombre y apellido, con un <b>descuento</b> total de
               </p>
-              <p className="text-lg md:text-xl font-bold text-gray-900 mb-1">
+              <p className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
                 $1.000
               </p>
-              <p className="text-xs md:text-sm text-gray-600">
+              <p className="text-md text-gray-600">
                 abonándolo durante los <b>primeros 10 días</b>, sino se mantendrá el mismo valor que en transferencia.
               </p>
             </div>
@@ -603,13 +601,13 @@ const Services = () => {
           {/* Información sobre matrícula adultos */}
           <div className="mt-8 max-w-4xl mx-auto">
             <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
-              <p className="text-sm font-semibold text-[#DBAA0C] mb-1">
+              <p className="text-md font-semibold text-[#DBAA0C] mb-1">
                 Matrícula anual
               </p>
-              <p className="text-lg md:text-xl font-bold text-gray-900 mb-1">
+              <p className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
                 $40.000
               </p>
-              <p className="text-xs md:text-sm text-gray-600">
+              <p className="text-md text-gray-600">
                 Incluye remera oficial de entrenamiento.
               </p>
             </div>
