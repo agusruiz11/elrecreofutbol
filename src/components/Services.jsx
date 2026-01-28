@@ -584,31 +584,32 @@ const Services = () => {
               </motion.div>
             ))}
           </div>
+
+          {/* Información sobre matrícula adultos */}
+          <div className="mt-8 max-w-4xl mx-auto">
+            <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
+              <p className="text-lg font-semibold text-[#DBAA0C] mb-1">
+                Matrícula anual
+              </p>
+              <p className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
+                GRATIS 
+              </p>
+              <b className="text-md text-gray-600">
+                Incluye remera oficial de entrenamiento.
+              </b>
+            </div>
+          </div>
+
           <div className="mt-8 max-w-4xl mx-auto mb-10">
             <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
               <p className="text-md text-gray-600 mb-1">
-              Podrán abonar en <b>efectivo</b> dentro de un sobre con nombre y apellido, con un <b>descuento</b> total de
+                Podrán abonar en <b>efectivo</b> dentro de un sobre con nombre y apellido, con un <b>descuento</b> total de
               </p>
               <p className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
                 $1.000
               </p>
               <p className="text-md text-gray-600">
                 abonándolo durante los <b>primeros 10 días</b>, sino se mantendrá el mismo valor que en transferencia.
-              </p>
-            </div>
-          </div>
-
-          {/* Información sobre matrícula adultos */}
-          <div className="mt-8 max-w-4xl mx-auto">
-            <div className="bg-white/80 rounded-xl border border-gray-100 p-4 text-center">
-              <p className="text-md font-semibold text-[#DBAA0C] mb-1">
-                Matrícula anual
-              </p>
-              <p className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
-                $40.000
-              </p>
-              <p className="text-md text-gray-600">
-                Incluye remera oficial de entrenamiento.
               </p>
             </div>
           </div>
