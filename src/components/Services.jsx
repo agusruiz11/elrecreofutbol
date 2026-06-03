@@ -21,7 +21,7 @@ const Services = () => {
   const menoresPlans = [
     {
       name: 'Individual 1 vez por semana',
-      price: '$56.000',
+      price: '$61.000',
       subtitle: '/ mes',
       features: [
         '1 entrenamiento semanal',
@@ -32,7 +32,7 @@ const Services = () => {
     },
     {
       name: 'Individual LIBRE',
-      price: '$66.000',
+      price: '$71.000',
       subtitle: '/ mes',
       features: [
         'Hasta 2 entrenamientos por semana',
@@ -44,12 +44,12 @@ const Services = () => {
     },
     {
       name: 'Extra: Competencia',
-      price: '$17.000',
+      price: 'Desde $18.000',
       subtitle: '/ mes',
       features: [
-        'Valor torneto apertura total p/ niño/a: $75.000 / mes',
-        'Extra competencia: $15.000 por niño/a de marzo a julio, con mínimo 6 y máximo 7 partidos. Se juega sábado de por medio y se reprograma por lluvia.',
-        'Incluye matrícula del torneo, pagos docentes, árbitros y seguros.',
+        'Torneo Ferro: $18.000/mes (abril a julio). Liga Formativa: $18.000 (abr-may) / $24.000 (jun-jul).',
+        'Matrícula del torneo: $20.000 por persona (incluye apertura y clausura).',
+        'Cuota incluye pagos docentes, partidos, árbitros y seguros. Equipos: mínimo 6, máximo 10.',
       ],
       paymentLink: 'https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=4ad55bcc927a485d92f0b5d500de6da9',
     },
@@ -58,10 +58,10 @@ const Services = () => {
   const pack2Plans = [
     {
       name: 'Pack familiar 1 v/s',
-      price: '$95.200',
+      price: '$103.700',
       subtitle: '/ mes',
       features: [
-        'Pack familiar x2 (10% descuento)',
+        'Pack familiar x2 (15% descuento)',
         '1 vez por semana para dos hermanos/as',
         'Entrenamientos recreativos y formativos',
       ],
@@ -69,10 +69,10 @@ const Services = () => {
     },
     {
       name: 'Pack familiar LIBRE',
-      price: '$112.200',
+      price: '$120.700',
       subtitle: '/ mes',
       features: [
-        'Pack familiar x2 (10% descuento)',
+        'Pack familiar x2 (15% descuento)',
         'Hasta 2 veces por semana para dos hermanos/as',
         'Mayor continuidad y progreso deportivo',
       ],
@@ -80,10 +80,10 @@ const Services = () => {
     },
     {
       name: 'Pack familiar 1/2',
-      price: '$103.700',
+      price: '$112.200',
       subtitle: '/ mes',
       features: [
-        'Pack familiar x2 (10% descuento)',
+        'Pack familiar x2 (15% descuento)',
         'Un hermano/a 1 vez por semana, otro/a LIBRE',
         'Flexibilidad para diferentes necesidades',
       ],
@@ -94,7 +94,7 @@ const Services = () => {
   const pack3Plans = [
     {
       name: 'Pack familiar 1 v/s',
-      price: '$142.800',
+      price: '$155.550',
       subtitle: '/ mes',
       features: [
         'Pack familiar x3 (15% descuento)',
@@ -105,7 +105,7 @@ const Services = () => {
     },
     {
       name: 'Pack familiar LIBRE',
-      price: '$168.300',
+      price: '$181.050',
       subtitle: '/ mes',
       features: [
         'Pack familiar x3 (15% descuento)',
@@ -116,7 +116,7 @@ const Services = () => {
     },
     {
       name: 'Pack familiar 1/3 (uno libre)',
-      price: '$151.300',
+      price: '$164.050',
       subtitle: '/ mes',
       features: [
         'Pack familiar x3 (15% descuento)',
@@ -127,7 +127,7 @@ const Services = () => {
     },
     {
       name: 'Pack familiar 2/3 (dos libres)',
-      price: '$159.800',
+      price: '$172.550',
       subtitle: '/ mes',
       features: [
         'Pack familiar x3 (15% descuento)',
@@ -319,7 +319,7 @@ const Services = () => {
               Planes mensuales – Menores
             </h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Precios vigentes de marzo a mayo 2026 (Aumentos trimestrales).
+              Precios vigentes de junio a septiembre 2026.
             </p>
           </div>
 
@@ -410,7 +410,7 @@ const Services = () => {
           {/* Pack x2 */}
           <div className="mb-12">
             <h4 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
-              Pack familiar x2 – 10% de descuento
+              Pack familiar x2 – 15% de descuento
             </h4>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {pack2Plans.map((plan, index) => (
@@ -615,6 +615,59 @@ const Services = () => {
           </div>
         </motion.div>
 
+        {/* Competencias – Torneo Ferro 2026 */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mb-12"
+        >
+          <div className="bg-white rounded-2xl shadow-lg border-l-4 border-l-[#DBAA0C] border border-gray-100 p-6 md:p-8">
+            <div className="flex items-start gap-3 mb-4">
+              <div className="w-10 h-10 rounded-full bg-[#DBAA0C]/10 flex items-center justify-center">
+                <Trophy className="w-5 h-5 text-[#DBAA0C]" />
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  Competencias – Torneo Ferro 2026
+                </h3>
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-start">
+              <div className="flex-1 min-w-0">
+                <ul className="space-y-1 text-gray-700 text-sm md:text-base mb-3 md:mb-0">
+                  <li>• Sede del torneo: Ferro.</li>
+                  <li>• Equipos: mínimo 6, máximo 10.</li>
+                  <li>• Matrícula: $20.000 por persona (incluye apertura y clausura).</li>
+                  <li>• Apertura — Abril: $18.000 | Mayo: $18.000 | Junio: $18.000 | Julio: $18.000.</li>
+                  <li>• Clausura: valor a confirmar.</li>
+                </ul>
+              </div>
+              <div className="flex-shrink-0 w-full md:w-auto">
+                <div className="mb-2">
+                  <h4 className="text-base md:text-lg font-semibold text-gray-900 text-center mb-2">
+                    Pre-inscribite completando el siguiente formulario
+                  </h4>
+                  <div className="flex justify-center">
+                    <Button
+                      asChild
+                      className="w-full md:w-64 flex items-center justify-center gap-2 md:h-12 px-5 py-3 bg-[#DBAA0C] hover:bg-gray-800 text-gray-900 hover:text-white font-semibold rounded-xl text-base md:text-lg"
+                    >
+                      <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                          <path d="M8 10h8M8 14h5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                        </svg>
+                        Formulario
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Competencias – Liga Formativa */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -640,10 +693,12 @@ const Services = () => {
                   <li>• Liga Formativa Masculina: sábados de por medio.</li>
                   <li>• Se reprograma por lluvia.</li>
                   <li>• Desde Sala de 5 años en adelante.</li>
-                  <li>• Apertura: abril 2026 (4 cuotas de $15.000).</li>
-                  <li>• Clausura: agosto 2026 (5 cuotas, valor a confirmar).</li>
+                  <li>• Equipos: mínimo 6, máximo 10.</li>
+                  <li>• Matrícula: $20.000 por persona (incluye apertura y clausura).</li>
+                  <li>• Apertura — Abril: $18.000 | Mayo: $18.000 | Junio: $24.000 | Julio: $24.000.</li>
+                  <li>• Clausura: agosto 2026 (valor a confirmar).</li>
                   <li>• Sede del torneo: Galicia 1973.</li>
-                  <li>• Las cuotas incluyen matrícula del torneo, pagos docentes, partidos, árbitros y seguros.</li>
+                  <li>• Las cuotas incluyen pagos docentes, partidos, árbitros y seguros.</li>
                 </ul>
               </div>
               {/* Botón a la derecha */}
